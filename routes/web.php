@@ -14,3 +14,14 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/tawuran',function(){
+	$json = file_get_contents('http://api.jakarta.go.id/ruang-publik/tawuran');
+	$obj = json_decode($json);
+	foreach ($obj->data as $key) {
+		$key->latitude = $key->location->latitude;
+		$key->longitude = $key->location->longitude;
+		unset($key->location);
+	}
+	echo json_encode($obj);
+});
