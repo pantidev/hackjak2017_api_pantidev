@@ -39,14 +39,22 @@ class LaporController extends Controller
 
     public function store(Request $request)
     {
+       
         $dilapor =  json_decode($request->getContent(),true);
+        if(empty($dilapor))
+        {
+            $dilapor['IdLokasi']=$request->input('IdLokasi');
+            $dilapor['Tentang']=$request->input('Tentang');
+            $dilapor['Pesan']=$request->input('Pesan');
+            $dilapor['Pengadu']=$request->input('Pengadu');
+        }
         $rules = [
             'IdLokasi'=>'required|numeric',
             'Tentang'=>'required',
             'Pesan'=>'required',
             'Pengadu'=>'required'
         ];
-    
+        
         $validator = Validator::make($dilapor, $rules);
         if ($validator->passes()) {
             
