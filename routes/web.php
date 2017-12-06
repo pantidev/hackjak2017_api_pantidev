@@ -25,3 +25,4 @@ Route::get('/tawuran',function(){
 	}
 	echo json_encode($obj);
 });
+
