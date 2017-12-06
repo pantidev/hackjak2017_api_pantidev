@@ -18,12 +18,12 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::resource('lapor', 'LaporController');
-<<<<<<< HEAD
+
 Route::get('total-aduan', function(){
     return Lapor::count();
 });
 
-=======
+
 
 Route::get('/tawuran',function(){
 	$json = file_get_contents('http://api.jakarta.go.id/ruang-publik/tawuran');
@@ -35,4 +35,4 @@ Route::get('/tawuran',function(){
 	}
 	echo json_encode($obj);
 });
->>>>>>> 25f573886c7c916fa3cd9b7072e7d3fb3223d933
+

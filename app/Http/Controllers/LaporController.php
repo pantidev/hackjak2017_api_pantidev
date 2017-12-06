@@ -44,8 +44,7 @@ class LaporController extends Controller
             'IdLokasi'=>'required|numeric',
             'Tentang'=>'required',
             'Pesan'=>'required',
-            'Pengadu'=>'required',
-            'Contact'=>'required'
+            'Pengadu'=>'required'
         ];
     
         $validator = Validator::make($dilapor, $rules);
@@ -57,7 +56,10 @@ class LaporController extends Controller
             $post->Tentang = $dilapor['Tentang'];
             $post->Pesan = $dilapor['Pesan'];
             $post->Pengadu = $dilapor['Pengadu'];
-            $post->Contact = $dilapor['Contact'];
+            if(!empty($dilapor['Contact']))
+            {
+                $post->Contact = $dilapor['Contact'];
+            }
             $isStored = $post->save();
             
             return response()->json(['stored' => $isStored, 'status' => 'ok']);
