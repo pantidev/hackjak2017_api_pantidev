@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades;
+use Illuminate\Support\Facades\DB;
 use Validator;
 use App\Lapor;
 
@@ -78,7 +79,7 @@ class LaporController extends Controller
      */
     public function show($id)
     {
-        //
+        return json_encode(DB::table('lapor')->where('IdLokasi', $id)->get());
     }
 
     /**

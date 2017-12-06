@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
-
+use App\Lapor;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -18,3 +18,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::resource('lapor', 'LaporController');
+Route::get('total-aduan', function(){
+    return Lapor::count();
+});
+
