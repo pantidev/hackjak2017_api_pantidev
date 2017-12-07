@@ -1,5 +1,17 @@
 # hackjak2017_api_pantidev
+
 ## repository for hackjack 2017 developed by Bobby Supriyadi, Dennis, Edwin Wicaksono A.K.A pantidev
+
+open api developed by panti:
+
+### 1. [GET: lapor](http://awseb-e-e-awsebloa-19aedqm1ecvzp-1894315445.ap-southeast-1.elb.amazonaws.com/api/lapor)
+### 2. [GET: lapor - one record](http://awseb-e-e-awsebloa-19aedqm1ecvzp-1894315445.ap-southeast-1.elb.amazonaws.com/api/lapor/1)
+### 3. [GET: ruang laktasi](http://awseb-e-e-awsebloa-19aedqm1ecvzp-1894315445.ap-southeast-1.elb.amazonaws.com/api/rl)
+### 4. [GET: ruang laktasi - one record](http://awseb-e-e-awsebloa-19aedqm1ecvzp-1894315445.ap-southeast-1.elb.amazonaws.com/api/rl/1)
+
+technologies:
+
+### AWS: RDS, Elastic Beanstalk
 
 ## data owned by Pemprov DKI Jakarta which has been used in this application as listed bellow:
 
