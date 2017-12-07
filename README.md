@@ -1,8 +1,8 @@
 # hackjak2017_api_pantidev
 
-## repository for hackjack 2017 developed by Bobby Supriyadi, Dennis, Edwin Wicaksono A.K.A pantidev
+## repository for hackjack 2017 developed by Bobby Supriadi, Dennis, Edwin Wicaksono A.K.A pantidev
 
-open api developed by panti:
+open api developed by pantidev:
 
 ### 1. [GET: lapor](http://awseb-e-e-awsebloa-19aedqm1ecvzp-1894315445.ap-southeast-1.elb.amazonaws.com/api/lapor)
 ### 2. [GET: lapor - one record](http://awseb-e-e-awsebloa-19aedqm1ecvzp-1894315445.ap-southeast-1.elb.amazonaws.com/api/lapor/1)
@@ -23,7 +23,7 @@ the rest of the functionalities within the app here by licensed as explained bel
 
 MIT License
 
-Copyright (c) 2017 Bobby Supriyadi, Dennis, Edwin Wicaksono
+Copyright (c) 2017 Bobby Supriadi, Dennis, Edwin Wicaksono
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
