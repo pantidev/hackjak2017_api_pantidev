@@ -10,8 +10,8 @@ open api developed by panti:
 ### 4. [GET: ruang laktasi - one record](http://awseb-e-e-awsebloa-19aedqm1ecvzp-1894315445.ap-southeast-1.elb.amazonaws.com/api/rl/1)
 
 technologies:
-
-### AWS: RDS, Elastic Beanstalk
+### language: PHP, laravel
+### server, AWS: RDS, Elastic Beanstalk
 
 ## data owned by Pemprov DKI Jakarta which has been used in this application as listed bellow:
 
