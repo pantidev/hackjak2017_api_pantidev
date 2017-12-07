@@ -30,6 +30,16 @@ class LaporController extends Controller
         //
     }
 
+    public function total()
+    {
+        return Lapor::count();
+    }
+
+    public function latestTen()
+    {
+        return Lapor::orderBy('TanggalLapor', 'desc')->take(10)->get();
+    }
+
     /**
      * Store a newly created resource in storage.
      *

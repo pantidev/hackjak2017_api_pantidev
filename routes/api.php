@@ -19,9 +19,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::resource('lapor', 'LaporController');
 
-Route::get('total-aduan', function(){
-    return Lapor::count();
-});
+Route::resource('rl', 'RuangLaktasiController');
+
+Route::get('total-aduan', 'LaporController@total');
 
 
 

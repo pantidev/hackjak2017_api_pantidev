@@ -12,17 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+	$data =  app('App\Http\Controllers\LaporController')->total();
+    return view('welcome',['data'=>$data]);
 });
-
-Route::get('/tawuran',function(){
-	$json = file_get_contents('http://api.jakarta.go.id/ruang-publik/tawuran');
-	$obj = json_decode($json);
-	foreach ($obj->data as $key) {
-		$key->latitude = $key->location->latitude;
-		$key->longitude = $key->location->longitude;
-		unset($key->location);
-	}
-	echo json_encode($obj);
+Route::get('/laporan', function () {
+	$data =  app('App\Http\Controllers\LaporController')->latestTen();
+    return view('laporan')->with(['data'=>$data]);
 });
 
