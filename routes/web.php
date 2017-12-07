@@ -13,6 +13,7 @@
 
 Route::get('/', function () {
 	$data =  app('App\Http\Controllers\LaporController')->total();
+    
     return view('welcome',['data'=>$data]);
 });
 Route::get('/laporan', function () {

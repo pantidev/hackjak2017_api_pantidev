@@ -71,10 +71,9 @@
                 </div>
 
             <div class="content">
-                <div class="title m-b-md">
-                    TAKO
-                </div>
-                <div>
+            <img src="/storage/simpleflow.png" height="80" width="270">
+            <br>
+                <div style="font-size:25px;">
                 total aduan : {{ $data }}
                 </div>
             </div>
