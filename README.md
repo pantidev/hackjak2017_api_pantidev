@@ -9,6 +9,11 @@ open api developed by pantidev:
 ### 3. [GET: ruang laktasi](http://awseb-e-e-awsebloa-19aedqm1ecvzp-1894315445.ap-southeast-1.elb.amazonaws.com/api/rl)
 ### 4. [GET: ruang laktasi - one record](http://awseb-e-e-awsebloa-19aedqm1ecvzp-1894315445.ap-southeast-1.elb.amazonaws.com/api/rl/1)
 
+web:
+
+### 1. [dashboard](http://awseb-e-e-awsebloa-19aedqm1ecvzp-1894315445.ap-southeast-1.elb.amazonaws.com)
+### 2. [10 laporan terakhir](http://awseb-e-e-awsebloa-19aedqm1ecvzp-1894315445.ap-southeast-1.elb.amazonaws.com/laporan)
+
 technologies:
 ### language: PHP, laravel
 ### server, AWS: RDS, Elastic Beanstalk
