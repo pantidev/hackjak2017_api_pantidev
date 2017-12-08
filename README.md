@@ -4,15 +4,15 @@
 
 open api developed by pantidev:
 
-### 1. [GET: lapor](http://awseb-e-e-awsebloa-19aedqm1ecvzp-1894315445.ap-southeast-1.elb.amazonaws.com/api/lapor)
-### 2. [GET: lapor - one record](http://awseb-e-e-awsebloa-19aedqm1ecvzp-1894315445.ap-southeast-1.elb.amazonaws.com/api/lapor/1)
-### 3. [GET: ruang laktasi](http://awseb-e-e-awsebloa-19aedqm1ecvzp-1894315445.ap-southeast-1.elb.amazonaws.com/api/rl)
-### 4. [GET: ruang laktasi - one record](http://awseb-e-e-awsebloa-19aedqm1ecvzp-1894315445.ap-southeast-1.elb.amazonaws.com/api/rl/1)
+### 1. [GET: lapor](http://pantidev.tk/api/lapor)
+### 2. [GET: lapor - one record](http://pantidev.tk/api/lapor/1)
+### 3. [GET: ruang laktasi](http://pantidev.tk/api/rl)
+### 4. [GET: ruang laktasi - one record](http://pantidev.tk/api/rl/1)
 
 web:
 
-### 1. [dashboard](http://awseb-e-e-awsebloa-19aedqm1ecvzp-1894315445.ap-southeast-1.elb.amazonaws.com)
-### 2. [10 laporan terakhir](http://awseb-e-e-awsebloa-19aedqm1ecvzp-1894315445.ap-southeast-1.elb.amazonaws.com/laporan)
+### 1. [dashboard](pantidev.tk)
+### 2. [10 laporan terakhir](pantidev.tk/laporan)
 
 technologies:
 ### language: PHP, laravel
