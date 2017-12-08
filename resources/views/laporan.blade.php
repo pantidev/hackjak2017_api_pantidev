@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/css/dataTables.bootstrap.min.css" rel="stylesheet"/>
+
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
@@ -25,10 +27,15 @@
     }
     
     /* Set black background color, white text and some padding */
-    footer {
+    .footer {
       background-color: #555;
       color: white;
       padding: 15px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      text-align: center;
     }
     
     /* On small screens, set height to 'auto' for sidenav and grid */
@@ -43,6 +50,7 @@
       text-align: center;
     }
   </style>
+
 </head>
 <body>
 
@@ -67,19 +75,15 @@
   
 <div class="container-fluid text-center">    
   <h2>Laporan Terakhir</h2>
-    <div style="float: right;">
-      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
-
-    </div>
     <table class="table" id="myTable">
     <thead>
       <tr>
-        <th>Nama Tempat</th>
-        <th>Tentang</th>
-        <th>Pesan</th>
-        <th>Pengadu</th>
-        <th>Kontak</th>
-        <th>Tanggal Lapor</th>
+        <th onclick="w3.sortHTML('#myTable', '.item', 'td:nth-child(1)')">Nama Tempat</th>
+        <th onclick="w3.sortHTML('#myTable', '.item', 'td:nth-child(2)')">Tentang</th>
+        <th onclick="w3.sortHTML('#myTable', '.item', 'td:nth-child(3)')">Pesan</th>
+        <th onclick="w3.sortHTML('#myTable', '.item', 'td:nth-child(4)')">Pengadu</th>
+        <th onclick="w3.sortHTML('#myTable', '.item', 'td:nth-child(5)')">Kontak</th>
+        <th onclick="w3.sortHTML('#myTable', '.item', 'td:nth-child(6)')">Tanggal Lapor</th>
       </tr>
     </thead>
     <tbody>
@@ -92,14 +96,23 @@
         <td>{{$lapor->Contact}}</td>
         <td>{{$lapor->TanggalLapor}}</td>
       </tr>
-@endforeach
-      
+    @endforeach
     </tbody>
   </table>
 </div>
 
+<div class="footer">Crafted with ♥ for Jakarta</div>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/js/jquery.dataTables.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/js/dataTables.bootstrap.min.js"></script>
 
 <script>
+$(document).ready(function() {
+  $('#myTable').DataTable({
+    "lengthChange": false
+  });
+});
+
 function myFunction() {
   var input, filter, table, tr, td, i;
   input = document.getElementById("myInput");

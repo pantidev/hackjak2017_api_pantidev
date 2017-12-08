@@ -21,7 +21,8 @@ Route::get('/laporan', function () {
 	//var_dump($data);
 	foreach ($data as $item) {
 		$item["namaTempat"] = cekRPTRA($item->IdLokasi);
-	}
+    }
+    
 	// var_dump($data);
     return view('laporan')->with(['data'=>$data]);
 });
@@ -38,4 +39,3 @@ function cekRPTRA($id) {
     }
     return $tampung;
 }
-
