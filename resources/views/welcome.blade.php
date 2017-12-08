@@ -71,7 +71,7 @@
                 </div>
 
             <div class="content">
-            <img src="/storage/simpleflow.png" height="80" width="270">
+            <img src="/img/simpleflow.png" height="80" width="270">
             <br>
                 <div style="font-size:25px;">
                 total aduan : {{ $data }}
